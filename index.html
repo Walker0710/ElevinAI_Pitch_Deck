@@ -211,79 +211,43 @@
     <section class="slides" id="slides">
       <!-- 1. Cover -->
       <section class="slide" data-title="Cover">
-        <div style="height: 100vh; display: grid; grid-template-columns: 1fr 1fr; gap: 0; position: relative; background: var(--bg);">
+        <div style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: var(--bg); padding: 40px;">
           
-          <!-- Left side - Main content -->
-          <div style="padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; background: var(--bg);">
-            
-            <!-- Product category -->
-            <div class="eyebrow" style="margin-bottom: 24px;">Enterprise AI Platform</div>
-            
-            <!-- Hero title -->
-            <h1 style="font-size: clamp(48px, 8vw, 72px); font-weight: 800; line-height: 0.9; margin: 0 0 32px; color: var(--accent); letter-spacing: -0.04em;">
-              ElevinAI
-            </h1>
-            
-            <!-- Impact statement -->
-            <div style="font-size: clamp(28px, 4vw, 36px); font-weight: 600; margin: 0 0 24px; color: var(--text); letter-spacing: -0.02em; line-height: 1.2;">
-              AI-Powered Performance Intelligence
-            </div>
-            
-            <!-- Mission statement -->
-            <p style="font-size: clamp(18px, 2.2vw, 22px); font-weight: 400; line-height: 1.6; color: var(--muted); margin: 0; max-width: 500px;">
-              Transform your organization with enterprise-grade AI that unifies feedback, delivers insights, and drives measurable performance improvements.
-            </p>
+          <!-- Simple logo mark -->
+          <div style="width: 64px; height: 64px; background: var(--accent); border-radius: 16px; margin-bottom: 40px; display: flex; align-items: center; justify-content: center;">
+            <div style="width: 24px; height: 24px; background: var(--bg); border-radius: 4px;"></div>
           </div>
           
-          <!-- Right side - Visual representation -->
-          <div style="background: var(--panel); border-left: 1px solid var(--line); position: relative; display: flex; align-items: center; justify-content: center; padding: 80px 60px;">
-            
-            <!-- Abstract geometric representation -->
-            <div style="position: relative; width: 280px; height: 280px;">
-              
-              <!-- Main central circle -->
-              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 140px; height: 140px; border: 2px solid var(--accent); border-radius: 50%; background: linear-gradient(135deg, var(--bg), rgba(79, 70, 229, 0.06));"></div>
-              
-              <!-- Top element - AI Analysis -->
-              <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px; background: var(--accent); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                <div style="width: 16px; height: 16px; background: var(--bg); border-radius: 3px;"></div>
-              </div>
-              
-              <!-- Right element -->
-              <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 32px; height: 32px; background: var(--bg); border: 2px solid var(--accent); border-radius: 6px;"></div>
-              
-              <!-- Bottom element - Real-time Insights -->
-              <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 44px; height: 44px; background: var(--accent-2); border-radius: 50%; opacity: 0.9;"></div>
-              
-              <!-- Left element - Enterprise Security -->
-              <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); width: 28px; height: 28px; background: var(--bg); border: 2px solid var(--accent-2); border-radius: 4px;"></div>
-              
-              <!-- Connection lines -->
-              <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;" viewBox="0 0 280 280">
-                <line x1="140" y1="60" x2="140" y2="110" stroke="var(--line)" stroke-width="1.5" opacity="0.6"/>
-                <line x1="220" y1="140" x2="170" y2="140" stroke="var(--line)" stroke-width="1.5" opacity="0.6"/>
-                <line x1="140" y1="220" x2="140" y2="170" stroke="var(--line)" stroke-width="1.5" opacity="0.6"/>
-                <line x1="60" y1="140" x2="110" y2="140" stroke="var(--line)" stroke-width="1.5" opacity="0.6"/>
-              </svg>
-            </div>
-            
-            <!-- Feature labels positioned around the visual -->
-            <div style="position: absolute; top: 15%; right: 25%; font-size: 10px; font-weight: 600; color: var(--muted); text-align: center; background: var(--bg); padding: 4px 8px; border-radius: 4px; border: 1px solid var(--line); white-space: nowrap;">
-              AI Analysis
-            </div>
-            
-            <div style="position: absolute; bottom: 15%; left: 50%; transform: translateX(-50%); font-size: 10px; font-weight: 600; color: var(--muted); text-align: center; background: var(--bg); padding: 4px 8px; border-radius: 4px; border: 1px solid var(--line); white-space: nowrap;">
-              Real-time Insights
-            </div>
-            
-            <div style="position: absolute; top: 50%; left: 12%; transform: translateY(-50%); font-size: 10px; font-weight: 600; color: var(--muted); text-align: center; background: var(--bg); padding: 4px 8px; border-radius: 4px; border: 1px solid var(--line); writing-mode: vertical-rl; text-orientation: mixed;">
-              Enterprise Security
-            </div>
+          <!-- Product category -->
+          <div style="font-size: 14px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">
+            Enterprise AI Platform
           </div>
+          
+          <!-- Hero title -->
+          <h1 style="font-size: clamp(64px, 8vw, 96px); font-weight: 700; line-height: 0.9; margin: 0 0 24px; color: var(--accent); letter-spacing: -0.04em;">
+            ElevinAI
+          </h1>
+          
+          <!-- Impact statement -->
+          <div style="font-size: clamp(28px, 4vw, 40px); font-weight: 400; margin: 0 0 32px; line-height: 1.2; max-width: 800px;" class="grad">
+            AI-Powered Performance Intelligence
+          </div>
+          
+          <!-- Mission statement -->
+          <p style="font-size: clamp(18px, 2vw, 24px); font-weight: 400; line-height: 1.5; color: var(--muted); margin: 0 0 48px; max-width: 600px;">
+            Transform your organization with enterprise-grade AI that unifies feedback, delivers insights, and drives measurable performance improvements.
+          </p>
           
           <!-- Minimal page indicator -->
-          <div style="position: absolute; bottom: 32px; left: 32px; display: flex; gap: 8px;">
+          <div style="position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
             <div style="width: 32px; height: 2px; background: var(--accent); border-radius: 1px;"></div>
+            <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
+            <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
+            <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
+            <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
+            <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
+            <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
+            <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
             <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
             <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
             <div style="width: 8px; height: 2px; background: var(--line); border-radius: 1px;"></div>
@@ -295,16 +259,11 @@
         <style>
           @media (max-width: 900px) {
             .slide[data-title="Cover"] > div {
-              grid-template-columns: 1fr !important;
-              gap: 0 !important;
+              padding: 32px 24px !important;
             }
-            .slide[data-title="Cover"] > div > div:first-child {
-              padding: 60px 32px 40px !important;
-            }
-            .slide[data-title="Cover"] > div > div:last-child {
-              border-left: none !important;
-              border-top: 1px solid var(--line) !important;
-              padding: 40px 32px 60px !important;
+            .slide[data-title="Cover"] button {
+              padding: 14px 24px !important;
+              font-size: 14px !important;
             }
           }
         </style>
